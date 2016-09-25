@@ -1,0 +1,144 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
+
+    <Frame name="Terminus" alpha="1" hidden="true">
+        <Size x="400" y="200"/>
+
+        <Anchors>
+            <Anchor point="TOP" x="0" y="-100"/>
+        </Anchors>
+
+        <Layers>
+            <!-- SANDBOX TERMINUS
+            <Layer level="BACKGROUND">
+                <Texture>
+                      <Color r="0" g="0" b="0" a="0.5"/>
+                </Texture>
+            </Layer>
+            -->
+            <Layer level="ARTWORK">
+                <FontString name="$parentText" parentKey="text" font="Interface\AddOns\Rising\Futura-Condensed-Normal.ttf" outline="NORMAL">
+                    <FontHeight>
+                        <AbsValue val="26"/>
+                    </FontHeight>
+                    <Shadow>
+                        <Offset>
+                            <AbsDimension x="2" y="-2"/>
+                        </Offset>
+                        <Color r="0" g="0" b="0"/>
+                    </Shadow>
+                    <Color r="0.9" g="0.9" b="0.9"/>
+
+                    <Anchors>
+                          <Anchor point="CENTER" x="0" y="50"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+
+        <Frames>
+            <StatusBar name="$parentBar" parentKey="bar" alpha="0" minValue="0" maxValue="75" valueStep="0.01">
+                <Size x="186" y="13"/>
+
+                <Animations>
+                    <AnimationGroup parentKey="animation">
+                        <Alpha change="1" duration="1" startDelay="0" order="1" />
+                        <Alpha change="-1" duration="1" startDelay="4" order="2"/>
+                        <Scripts>
+                            <OnFinished>
+                                Terminus:Hide();
+                            </OnFinished>
+                        </Scripts>
+                    </AnimationGroup>
+                </Animations>
+
+                <Anchors>
+                    <Anchor point="CENTER" x="30" y="0"/>
+                </Anchors>
+
+                <BarTexture file="Interface\AddOns\Terminus\Textures\smallTextureBar.blp"/>
+                <BarColor r="0.85" g="0.85" b="1"/>
+
+                <Layers>
+                    <Layer level="BACKGROUND">
+                        <!-- SANDBOX TERMINUS BAR
+                        <Texture>
+                              <Color r="0.8" g="0" b="0" a="0.5"/>
+                        </Texture>
+                        -->
+                        <Texture name="$parentBackground" parentKey="background" file="Interface\AddOns\Terminus\Textures\smallBar.blp">
+                            <Size x="358" y="45"/>
+                            <Anchors>
+                                <Anchor point="CENTER" x="-1"/>
+                            </Anchors>
+                        </Texture>
+                    </Layer>
+
+                    <Layer level="BACKGROUND" textureSubLevel="2">
+                        <Texture name="$parentBackgroundHighlight" parentKey="backgroundHighlight" file="Interface\AddOns\Terminus\Textures\smallBarHighlight.blp" alpha="0" hidden="true">
+                            <Size x="358" y="45"/>
+                            <Anchors>
+                                <Anchor point="CENTER" x="-1"/>
+                            </Anchors>
+                            <Animations>
+                                <AnimationGroup parentKey="animation">
+                                    <Alpha change="1" duration="0.5" startDelay="0" order="1" />
+                                    <Alpha change="-1" duration="0.5" startDelay="0" order="2"/>
+                                    <Alpha change="1" duration="0.5" startDelay="0" order="3" />
+                                    <Alpha change="-1" duration="0.5" startDelay="0" order="4"/>
+                                    <Scripts>
+                                        <OnPlay>
+                                            self:GetParent():Show();
+                                        </OnPlay>
+                                        <OnFinished>
+                                            self:GetParent():Hide();
+                                        </OnFinished>
+                                    </Scripts>
+                                </AnimationGroup>
+                            </Animations>
+                        </Texture>
+                    </Layer>
+
+                    <Layer level="ARTWORK">
+                        <FontString name="$parentLevelProgress" parentKey="levelProgress" text="Level Progress" font="Interface\AddOns\Rising\Futura-Condensed-Normal.ttf" outline="NORMAL">
+                            <FontHeight>
+                                <AbsValue val="16"/>
+                            </FontHeight>
+                            <Shadow>
+                                <Offset>
+                                    <AbsDimension x="1" y="-1"/>
+                                </Offset>
+                                <Color r="0" g="0" b="0"/>
+                            </Shadow>
+                            <Color r="0.55" g="0.55" b="0.55"/>
+
+                            <Anchors>
+                                    <Anchor point="RIGHT" relativeTo="$parentBackground" relativePoint="LEFT" x="60" y="0"/>
+                            </Anchors>
+                        </FontString>
+
+                        <FontString name="$parentLevelNumber" parentKey="levelNumber" font="Interface\AddOns\Rising\Futura-Condensed-Normal.ttf" outline="NORMAL">
+                            <FontHeight>
+                                <AbsValue val="22"/>
+                            </FontHeight>
+                            <Shadow>
+                                <Offset>
+                                    <AbsDimension x="1" y="-1"/>
+                                </Offset>
+                                <Color r="0" g="0" b="0"/>
+                            </Shadow>
+                            <Color r="0.9" g="0.9" b="0.9"/>
+
+                            <Anchors>
+                                  <Anchor point="LEFT" relativeTo="$parentBackground" relativePoint="RIGHT" x="-60" y="0"/>
+                            </Anchors>
+                        </FontString>
+                    </Layer>
+
+                </Layers>
+
+            </StatusBar>
+        </Frames>
+
+    </Frame>
+
+</Ui>

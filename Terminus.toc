@@ -1,0 +1,9 @@
+## Interface: 40300
+## Title: Terminus
+## Author: Lanrutcon
+## Notes: SkySkills
+## Version: 1.0
+## SavedVariables: TerminusSV
+
+Terminus.xml
+Terminus.lua
