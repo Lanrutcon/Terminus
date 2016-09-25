@@ -1,4 +1,4 @@
-## Interface: 40300
+## Interface: 70000
 ## Title: Terminus
 ## Author: Lanrutcon
 ## Notes: SkySkills

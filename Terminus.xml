@@ -41,8 +41,8 @@
 
                 <Animations>
                     <AnimationGroup parentKey="animation">
-                        <Alpha change="1" duration="1" startDelay="0" order="1" />
-                        <Alpha change="-1" duration="1" startDelay="4" order="2"/>
+                        <Alpha fromAlpha="0" toAlpha="1" duration="1" startDelay="0" order="1"/>
+                        <Alpha fromAlpha="1" toAlpha="0" duration="1" startDelay="4" order="2"/>
                         <Scripts>
                             <OnFinished>
                                 Terminus:Hide();
@@ -81,10 +81,10 @@
                             </Anchors>
                             <Animations>
                                 <AnimationGroup parentKey="animation">
-                                    <Alpha change="1" duration="0.5" startDelay="0" order="1" />
-                                    <Alpha change="-1" duration="0.5" startDelay="0" order="2"/>
-                                    <Alpha change="1" duration="0.5" startDelay="0" order="3" />
-                                    <Alpha change="-1" duration="0.5" startDelay="0" order="4"/>
+                                    <Alpha fromAlpha="0" toAlpha="1" duration="0.5" startDelay="0" order="1" />
+                                    <Alpha fromAlpha="1" toAlpha="0" duration="0.5" startDelay="0" order="2"/>
+                                    <Alpha fromAlpha="0" toAlpha="1" duration="0.5" startDelay="0" order="3" />
+                                    <Alpha fromAlpha="1" toAlpha="0" duration="0.5" startDelay="0" order="4"/>
                                     <Scripts>
                                         <OnPlay>
                                             self:GetParent():Show();
