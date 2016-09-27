@@ -2,7 +2,7 @@
 ## Title: Terminus
 ## Author: Lanrutcon
 ## Notes: SkySkills
-## Version: 1.0
+## Version: 1.0.1
 ## SavedVariables: TerminusSV
 
 Terminus.xml

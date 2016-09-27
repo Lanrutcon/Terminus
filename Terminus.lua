@@ -40,14 +40,15 @@ end
 local function getSkillInfo(chatMessage)
     --"Your skill in %s has increased to %d.";
     local skill, newLevel;
-
-    --"First Aid" are 2 words, so it messes up with the generic algorithm
+	
+	--"First Aid" are 2 words, so it messes up with the generic algorithm
 	if(string.find(chatMessage, PROFESSIONS_FIRST_AID)) then
 		skill = PROFESSIONS_FIRST_AID;
 		newLevel = string.match(chatMessage, "%d+");
 		return skill, newLevel;
 	end
-
+	
+	
     local i = 1;
     for word in string.gmatch(chatMessage, "%w+") do
         if(i == skillIndex) then

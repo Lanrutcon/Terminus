@@ -16,7 +16,7 @@
             </Layer>
             -->
             <Layer level="ARTWORK">
-                <FontString name="$parentText" parentKey="text" font="Interface\AddOns\Rising\Futura-Condensed-Normal.ttf" outline="NORMAL">
+                <FontString name="$parentText" parentKey="text" font="Interface\AddOns\Terminus\Fonts\Futura-Condensed-Normal.ttf" outline="NORMAL">
                     <FontHeight>
                         <AbsValue val="26"/>
                     </FontHeight>
@@ -99,7 +99,7 @@
                     </Layer>
 
                     <Layer level="ARTWORK">
-                        <FontString name="$parentLevelProgress" parentKey="levelProgress" text="Level Progress" font="Interface\AddOns\Rising\Futura-Condensed-Normal.ttf" outline="NORMAL">
+                        <FontString name="$parentLevelProgress" parentKey="levelProgress" text="Level Progress" font="Interface\AddOns\Terminus\Fonts\Futura-Condensed-Normal.ttf" outline="NORMAL">
                             <FontHeight>
                                 <AbsValue val="16"/>
                             </FontHeight>
@@ -116,7 +116,7 @@
                             </Anchors>
                         </FontString>
 
-                        <FontString name="$parentLevelNumber" parentKey="levelNumber" font="Interface\AddOns\Rising\Futura-Condensed-Normal.ttf" outline="NORMAL">
+                        <FontString name="$parentLevelNumber" parentKey="levelNumber" font="Interface\AddOns\Terminus\Fonts\Futura-Condensed-Normal.ttf" outline="NORMAL">
                             <FontHeight>
                                 <AbsValue val="22"/>
                             </FontHeight>
